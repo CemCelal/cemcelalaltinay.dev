@@ -1,12 +1,12 @@
 ---
 weight: 3
-title: "Theme Documentation - Built-in Shortcodes"
+title: "Süper Ekonomik Blog Sitesi"
 date: 2020-03-04T16:29:41+08:00
 lastmod: 2020-03-04T16:29:41+08:00
 draft: false
-author: "Dillon"
-authorLink: "https://dillonzq.com"
-description: "Hugo provides multiple built-in shortcodes for author convenience and to keep your markdown content clean."
+author: "Cem Celal Altınay"
+authorLink: "https://cemcelalaltinay.dev"
+description: "Hugo kullanımı basit temel web sitesi aracı olup statik siteler için harika bir çözümdür."
 images: []
 resources:
 - name: "featured-image"
@@ -18,162 +18,34 @@ categories: ["documentation"]
 lightgallery: true
 ---
 
-**Hugo** provides multiple built-in shortcodes for author convenience and to keep your markdown content clean.
+**Hugo** temel statik siteler yapmak için kullanılan veritabanı olmamaksızın çalışan web site tool aracıdır. **Hugo** kullanımı kolay açık kaynaklı ve tamamen ücretsizdir. Bu sayede uygun fiyatlı bir web site üretmek mümkündür. 
+Github Pages + Hugo + Google Domains = Süper ekonomik web sitesi..
 
-<!--more-->
+## Hugo Nasıl İndirilir Kurulur?
+    
+Daha önce hiç windows ile kurulum yapmadığım için Linux üzerinden anlatacağım. Hugo kurulumu çok basit.
 
-Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. You could use pure HTML to expand possibilities.
+https://gohugo.io/installation/linux/
 
-But this happens to be a bad idea. Everyone uses Markdown because it’s pure and simple to read even non-rendered. You should avoid HTML to keep it as simple as possible.
+Kurulum için git kullanmamız gerekiyor. Git kurulu değilse kurmanızı tavsiye ederim.
 
-To avoid this limitations, Hugo created [shortcodes](https://gohugo.io/extras/shortcodes/).
-A shortcode is a simple snippet that can generate reasonable HTML code and conforms to Markdown's design philosophy.
+Debian Linux için;
 
-Hugo ships with a set of predefined shortcodes that represent very common usage. These shortcodes are provided for author convenience and to keep your markdown content clean.
+sudo apt install hugo
 
-## 1 figure {#figure}
+Kodu ile kurulumumuzu yapıyoruz.
 
-[Documentation of `figure`](https://gohugo.io/content-management/shortcodes#figure)
+Daha sonra "https://gohugo.io/getting-started/quick-start/" olduğu gibi adımları takip ediyoruz.
 
-Example `figure` input:
-
-```markdown
-{{</* figure src="/images/lighthouse.jpg" title="Lighthouse (figure)" */>}}
+```
+hugo new site test-sitem
+cd test-sitem
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke themes/ananke
+echo "theme = 'ananke'" >> hugo.toml
+hugo server
 ```
 
-The rendered output looks like this:
+Artık"http://localhost:1313" adresinden yeni sitenizi görebilirsiniz. Sitenin config dosyası üzerinden düzenlemeleri yapabilir, content klasörü içerisinden içerikleri değişebilirsiniz.
 
-{{< figure src="/images/lighthouse.jpg" title="Lighthouse (figure)" >}}
-
-The HTML looks like this:
-
-```html
-<figure>
-    <img src="/images/lighthouse.jpg"/>
-    <figcaption>
-        <h4>Lighthouse (figure)</h4>
-    </figcaption>
-</figure>
-```
-
-## 2 gist
-
-[Documentation of `gist`](https://gohugo.io/content-management/shortcodes#gist)
-
-Example `gist` input:
-
-```markdown
-{{</* gist spf13 7896402 */>}}
-```
-
-The rendered output looks like this:
-
-{{< gist spf13 7896402 >}}
-
-The HTML looks like this:
-
-```html
-<script type="application/javascript" src="https://gist.github.com/spf13/7896402.js"></script>
-```
-
-## 3 highlight
-
-[Documentation of `highlight`](https://gohugo.io/content-management/shortcodes#instagram)
-
-Example `highlight` input:
-
-```markdown
-{{</* highlight html */>}}
-<section id="main">
-    <div>
-        <h1 id="title">{{ .Title }}</h1>
-        {{ range .Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-    </div>
-</section>
-{{</* /highlight */>}}
-```
-
-The rendered output looks like this:
-
-{{< highlight html >}}
-<section id="main">
-    <div>
-        <h1 id="title">{{ .Title }}</h1>
-        {{ range .Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-    </div>
-</section>
-{{< /highlight >}}
-
-## 4 instagram
-
-[Documentation of `instagram`](https://gohugo.io/content-management/shortcodes#instagram)
-
-{{< admonition question "Instagram’s API was deprecated since October 24th, 2020" >}}
-The instagram-shortcode refers an endpoint of Instagram’s API, that’s deprecated since October 24th, 2020.
-Thus, no images can be fetched from this API endpoint, resulting in an error when the instagram-shortcode is used.
-For more information please have a look at GitHub issue [#7879](https://github.com/gohugoio/hugo/issues/7879).
-{{< /admonition >}}
-
-## 5 param
-
-[Documentation of `param`](https://gohugo.io/content-management/shortcodes#param)
-
-Example `param` input:
-
-```markdown
-{{</* param description */>}}
-```
-
-The rendered output looks like this:
-
-{{< param description >}}
-
-## 6 ref and relref {#ref-and-relref}
-
-[Documentation of `ref` and `relref`](https://gohugo.io/content-management/shortcodes#ref-and-relref)
-
-## 7 tweet
-
-[Documentation of `tweet`](https://gohugo.io/content-management/shortcodes#tweet)
-
-Example `tweet` input:
-
-```markdown
-{{</* tweet 917359331535966209 */>}}
-```
-
-The rendered output looks like this:
-
-{{< tweet 917359331535966209 >}}
-
-## 8 vimeo
-
-[Documentation of `vimeo`](https://gohugo.io/content-management/shortcodes#vimeo)
-
-Example `vimeo` input:
-
-```markdown
-{{</* vimeo 146022717 */>}}
-```
-
-The rendered output looks like this:
-
-{{< vimeo 146022717 >}}
-
-## 9 youtube
-
-[Documentation of `youtube`](https://gohugo.io/content-management/shortcodes#youtube)
-
-Example `youtube` input:
-
-```markdown
-{{</* youtube w7Ft2ymGmfc */>}}
-```
-
-The rendered output looks like this:
-
-{{< youtube w7Ft2ymGmfc >}}
+Tüm işlemleriniz bittikten sonra Ctrl+C ile hugo server durdurmanız daha sonra sitenizin bulunduğu klasörde "hugo" komutu ile derlemeniz gerekmektedir.
