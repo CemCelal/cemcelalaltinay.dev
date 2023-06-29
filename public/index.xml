@@ -7,11 +7,21 @@
             <webMaster>usb-cca@proton.me (Cem Ceal Altınay)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 04 Mar 2020 16:29:41 &#43;0800</lastBuildDate>
             <atom:link href="https://cemcelalaltinay.dev/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Süper Ekonomik Blog Sitesi</title>
-    <link>https://cemcelalaltinay.dev/theme-documentation-built-in-shortcodes/</link>
+    <title>Recon Nedir?</title>
+    <link>https://cemcelalaltinay.dev/recon-nedir/</link>
     <pubDate>Wed, 04 Mar 2020 16:29:41 &#43;0800</pubDate>
     <author>Cem Celal Altınay</author>
-    <guid>https://cemcelalaltinay.dev/theme-documentation-built-in-shortcodes/</guid>
+    <guid>https://cemcelalaltinay.dev/recon-nedir/</guid>
+    <description><![CDATA[Hedef üzerinde sessizce veya sesli şekilde yapılan araştırma ve gözlemlere kısace Recon denir.
+1 İstihbarat Nedir? Hedef hakkında elde edilmiş ve henüz işlenmemiş veriler bütünü olarak adlandırabiliriz. Örneğin hedefin kullandığı güvenlik yazılımları, API yazılımları, yazılım dili ve Host ediş yöntemi bunlara bir örnektir. Bu veriler ile bilinen zaafiyet araştırmaları veya bruteforce denemeleri bu elde edilen verilerin işlenmesidir.
+2 Sessiz Recon Nedir? İnternet üzerinden veya çeşitli kaynaklardan hedef ile hiç bir temasa geçmeden - PING v.]]></description>
+</item>
+<item>
+    <title>Süper Ekonomik Blog Sitesi</title>
+    <link>https://cemcelalaltinay.dev/ekonomik-blog-sitesi/</link>
+    <pubDate>Wed, 04 Mar 2020 16:29:41 &#43;0800</pubDate>
+    <author>Cem Celal Altınay</author>
+    <guid>https://cemcelalaltinay.dev/ekonomik-blog-sitesi/</guid>
     <description><![CDATA[Hugo temel statik siteler yapmak için kullanılan veritabanı olmamaksızın çalışan web site tool aracıdır. Hugo kullanımı kolay açık kaynaklı ve tamamen ücretsizdir. Bu sayede uygun fiyatlı bir web site üretmek mümkündür. Github Pages + Hugo + Google Domains = Süper ekonomik web sitesi..
 Hugo Nasıl İndirilir Kurulur? Daha önce hiç windows ile kurulum yapmadığım için Linux üzerinden anlatacağım. Hugo kurulumu çok basit.
 https://gohugo.io/installation/linux/
