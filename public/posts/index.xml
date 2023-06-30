@@ -10,9 +10,8 @@
     <pubDate>Wed, 04 Mar 2020 16:29:41 &#43;0800</pubDate>
     <author>Cem Celal Altınay</author>
     <guid>https://cemcelalaltinay.dev/recon-nedir/</guid>
-    <description><![CDATA[Hedef üzerinde sessizce veya sesli şekilde yapılan araştırma ve gözlemlere kısace Recon denir.
-1 İstihbarat Nedir? Hedef hakkında elde edilmiş ve henüz işlenmemiş veriler bütünü olarak adlandırabiliriz. Örneğin hedefin kullandığı güvenlik yazılımları, API yazılımları, yazılım dili ve Host ediş yöntemi bunlara bir örnektir. Bu veriler ile bilinen zaafiyet araştırmaları veya bruteforce denemeleri bu elde edilen verilerin işlenmesidir.
-2 Sessiz Recon Nedir? İnternet üzerinden veya çeşitli kaynaklardan hedef ile hiç bir temasa geçmeden - PING v.]]></description>
+    <description><![CDATA[Hedef üzerinde sessizce veya sesli şekilde yapılan araştırma ve gözlemlere kısace Recon denir. Burada bulunan bilgiler bana göre terimler olup kendime göre yorumlar yapıyorum. Daha doğru bilgiler için aradığınız kaynak burası değil..
+1 İstihbarat Nedir? Hedef hakkında elde edilmiş ve henüz işlenmemiş veriler bütünü olarak adlandırabiliriz. Örneğin hedefin kullandığı güvenlik yazılımları, API yazılımları, yazılım dili ve Host ediş yöntemi bunlara bir örnektir. Bu veriler ile bilinen zaafiyet araştırmaları veya bruteforce denemeleri bu elde edilen verilerin işlenmesidir.]]></description>
 </item>
 <item>
     <title>Süper Ekonomik Blog Sitesi</title>
