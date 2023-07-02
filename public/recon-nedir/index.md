@@ -42,3 +42,7 @@ Hedef sistem ile doğrudan iletişime geçerek olandır.Örn bruteforce ile subd
 Kullanımı harika kolay subdomain v.b. için fazlaca işlevsel tool. 
 
 **netcat** - bakmam lazım yani kullandım ama ezbere copy+paste kullandım daha tam çözemedim.
+
+**nmap** 
+**nikto**
+**tee**
